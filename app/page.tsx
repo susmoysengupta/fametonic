@@ -1,12 +1,15 @@
 import Image from 'next/image';
+import ChevronRightSVG from './assets/icons/chevron-right.svg';
+import HamburgerSVG from './assets/icons/hamburger.svg';
+import LogoSVG from './assets/logo.svg';
 
 export default function Home() {
 	return (
 		<div className="min-h-screen text-white font-main">
 			<header className="w-full bg-gradient-to-r from-[#EE0B55] to-[#35ABC9] py-2 px-4 text-center text-sm lg:text-base font-semibold">
 				<span className="text-[#00E7F9] font-extrabold">
-					🚀 FRESH BEGINNINGS SALE: &nbsp;
-				</span>
+					🚀 FRESH BEGINNINGS SALE :
+				</span>{' '}
 				<span className="text-white">
 					Extra 25% OFF, Limited spots - start your journey today!
 				</span>
@@ -16,14 +19,14 @@ export default function Home() {
 				<div className="relative flex flex-col w-full mb-10 overflow-hidden lg:gap-12">
 					<nav className="absolute top-0 left-0 right-0 flex items-center justify-between lg:static lg:items-start">
 						<div className="flex justify-center flex-1 lg:justify-start">
-							<img
-								src="/logo.svg"
+							<Image
+								src={LogoSVG}
 								alt="fame tonic"
 								className="w-28 lg:w-40"
 							/>
 						</div>
 						<button className="absolute right-0 lg:hidden">
-							<img src="/icons/hamburger.svg" alt="menu" />
+							<Image src={HamburgerSVG} alt="menu" />
 						</button>
 
 						<div className="hidden lg:block space-x-10 font-semibold text-[18px] text-[#A9A9A9]">
@@ -81,10 +84,10 @@ export default function Home() {
 						</ul>
 
 						<div className="w-full mt-8 text-center lg:w-1/2">
-							<button className="w-full font-main bg-[#FC004E] hover:bg-[#e10047] text-white text-lg font-bold py-3 lg:py-2 px-6 rounded-[10px] drop-shadow-md drop-shadow-[#00E7F9] flex items-center justify-center gap-2">
+							<button className="w-full font-main bg-[#FC004E] hover:bg-[#e10047] text-white text-lg font-bold py-2 px-6 rounded-[10px] drop-shadow-md drop-shadow-[#00E7F9] flex items-center justify-center gap-2">
 								GET STARTED
 								<span>
-									<img src="/icons/chevron-right.svg" />
+									<Image src={ChevronRightSVG} alt="" />
 								</span>
 							</button>
 							<p className="mt-[10px] text-xs">
@@ -93,8 +96,9 @@ export default function Home() {
 						</div>
 
 						<p className="text-[10px] text-[#ABABAB] mt-6">
-							By clicking "Get Started", you agree with Terms and
-							Conditions, Privacy Policy, Subscription Terms
+							By clicking &quot;Get Started&quot;, you agree with
+							Terms and Conditions, Privacy Policy, Subscription
+							Terms
 						</p>
 						<p className="text-[10px] text-[#ABABAB] mt-1 lg:mt-3 font-nunito">
 							Fametonic 2025 © All Rights Reserved.
