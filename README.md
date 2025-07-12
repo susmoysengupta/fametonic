@@ -7,3 +7,5 @@
 - [x] upload result to public repo and share link with us
 - [x] Make a live demo and share a link to a live demo
 
+### Live demo link
+https://fametonic-netzet-task.vercel.app/
