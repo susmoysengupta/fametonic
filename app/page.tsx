@@ -16,7 +16,7 @@ export default function Home() {
 			</header>
 
 			<main className="px-5 py-4 pb-16 lg:py-8 lg:px-32">
-				<div className="relative flex flex-col w-full mb-10 overflow-hidden lg:gap-12">
+				<div className="relative flex flex-col w-full mb-10 lg:gap-12">
 					<nav className="absolute top-0 left-0 right-0 flex items-center justify-between lg:static lg:items-start">
 						<div className="flex justify-center flex-1 lg:justify-start">
 							<Image
@@ -44,7 +44,7 @@ export default function Home() {
 						priority
 					/>
 
-					<div className="-mt-8 lg:-mt-0 lg:w-[55%] flex flex-col items-center text-center lg:text-left lg:items-start">
+					<div className="-mt-12 lg:-mt-0 lg:w-[55%] flex flex-col items-center text-center lg:text-left lg:items-start">
 						<h1 className="text-2xl font-extrabold lg:text-4xl">
 							Want to Turn Social Media Into a Profitable Career?
 						</h1>
